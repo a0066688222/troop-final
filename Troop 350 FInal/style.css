@@ -1,0 +1,150 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #989c98;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+   
+}
+
+h1 {
+    color: #1b8f32;
+    font-size: 42px;
+    margin-bottom: 5px;
+    background-color: #034e12;
+    text-align: center;
+}
+
+h2, h3 {
+    color: darkolivegreen;
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #036717;
+    color: whitesmoke;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: darkolivegreen;
+    transform: translateY(-1px);
+}
+
+#location-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+#calendar-section .calendar-month {
+    background-color: #b0aeae;
+    border-radius: 6px;
+    border-color: black;
+    padding: 15px;
+}
+
+#calendar-section h3 {
+    color: #036717;
+    margin-top: 0;
+    padding-bottom: 5px;
+}
+
+#calendar-section li {
+    padding: 6px 0;
+    font-size: 15px;
+}
+
+#calendar-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#calendar-section li:last-child {
+    border-bottom: none;
+}
+
+#calendar-section strong {
+    color: darkolivegreen;
+    font-size: 16px;
+}
+
+body.black {
+    background-color: #000000 !important;
+}
+
+body.black p, 
+body.black h2, 
+body.black h3 {
+    color: #ffffff;
+}
+
+body.black #calendar-section {
+    background-color: #1a1a1a;
+}
+
+body.black .calendar-month {
+    background-color: #2b2b2b;
+    border-color: #4caf50;
+}
+
+body.black .calendar-month strong {
+    color: #81c784;
+}
+
+body.black .calendar-month, 
+body.black .calendar-month h3, 
+body.black .calendar-month p, 
+body.black .calendar-month li {
+    color: #3f3a3a;
+}
+
+#calendar-section {
+    margin-bottom: 20px;
+}
+
+#about-section, #why-section, #location-button-section, #ranks-section, #gear-section {
+  display: none;
+}
+
+.fade-in {
+  display: block !important;
+  animation: slowFade 0.5s ease-in-out forwards;
+}
+
+.fade-away {
+  display: block !important;
+  animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+@keyframes slowFade {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(-10px); }
+}
+body.black #ranks-section {
+  color: #ffffff;
+}
+body.black #gear-section {
+    color: #ffffff;
+}
